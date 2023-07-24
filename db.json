@@ -3,7 +3,7 @@
     {
       "title": "Berat",
       "content": "Bir seyler yapiyoruz iste ya",
-      "isDone": false,
+      "isDone": true,
       "createdDate": "2023-07-24T17:23:23.128Z",
       "id": 1
     },

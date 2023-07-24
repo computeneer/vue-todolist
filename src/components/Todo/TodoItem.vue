@@ -1,4 +1,5 @@
 <template>
+  <loading v-if="loading" />
   <div class="todo" :class="{ done: todo.isDone }">
     <div class="todo-title">{{ todo.title }}</div>
     <div class="todo-date">
@@ -18,6 +19,11 @@
 <script>
 export default {
   name: "TodoItem",
+  data() {
+    return {
+      loading: false,
+    };
+  },
   props: {
     todo: {
       type: Object,
@@ -34,6 +40,7 @@ export default {
   },
   methods: {
     async updateIsDone() {
+      this.loading = true;
       const data = {
         ...this.todo,
         isDone: !this.todo.isDone,
@@ -49,12 +56,15 @@ export default {
         }
       );
       const result = await response.json();
+      this.loading = false;
       this.getTodos();
     },
     async deleteTodo() {
+      this.loading = true;
       await fetch(`http://localhost:5001/todos/${this.todo.id}`, {
         method: "DELETE",
       });
+      this.loading = false;
       this.getTodos();
     },
   },

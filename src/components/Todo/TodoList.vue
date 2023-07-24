@@ -1,4 +1,5 @@
 <template>
+  <loading v-if="loading" />
   <AddTodo :addTodoToList="addTodoToList" />
   <div class="container" v-if="todos.length > 0">
     <h2 class="title">{{ title }}</h2>
@@ -27,6 +28,7 @@ export default {
     return {
       title: "Todo List",
       todos: [],
+      loading: false,
     };
   },
   created() {
@@ -34,11 +36,15 @@ export default {
   },
   methods: {
     getTodos() {
+      this.loading = true;
       // axios gibi kütüphaneler ile de istek atılabilir.
       fetch("http://localhost:5001/todos")
         .then((res) => res.json())
         .then((res) => {
           this.todos = res;
+        })
+        .finally(() => {
+          this.loading = false;
         });
     },
     addTodoToList(todo) {

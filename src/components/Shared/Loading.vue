@@ -13,7 +13,7 @@
   display: grid;
   place-items: center;
   background: #00000084;
-
+  z-index: 99;
   font-size: 6rem;
 }
 
