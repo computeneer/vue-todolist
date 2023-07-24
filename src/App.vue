@@ -1,16 +1,10 @@
 <template>
-  <AddTodo />
-  <TodoList />
+  <router-view></router-view>
 </template>
 
 <script>
-import TodoList from "./components/Todo/TodoList.vue";
-import AddTodo from "./components/Todo/AddTodo.vue";
 export default {
-  components: {
-    TodoList,
-    AddTodo,
-  },
+  name: "App",
 };
 </script>
 

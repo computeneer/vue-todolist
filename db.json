@@ -1,58 +1,25 @@
 {
   "todos": [
     {
-      "id": 1,
-      "title": "Todo 1",
-      "content": "Todo Content 1",
-      "isDone": false
-    },
-    {
-      "id": 2,
-      "title": "Todo 2",
-      "content": "Todo Content 2",
-      "isDone": true
-    },
-    {
-      "id": 3,
-      "title": "Todo 3",
-      "content": "Todo Content 3",
-      "isDone": false
-    },
-    {
-      "id": 4,
-      "title": "Todo 4",
-      "content": "Todo Content 4",
-      "isDone": true
-    },
-    {
-      "id": 5,
-      "title": "Todo 5",
-      "content": "Todo Content 5",
-      "isDone": false
-    },
-    {
-      "id": 6,
-      "title": "Todo 6",
-      "content": "Todo Content 6",
-      "isDone": true
-    },
-    {
-      "id": 7,
-      "title": "Ekledik",
-      "content": "Test content",
-      "isDone": false
-    },
-    {
       "title": "Berat",
-      "content": "Vue Tarafindan Gonderilmistir",
-      "isDone": true,
-      "id": 8
+      "content": "Bir seyler yapiyoruz iste ya",
+      "isDone": false,
+      "createdDate": "2023-07-24T17:23:23.128Z",
+      "id": 1
     },
     {
-      "title": "beasdas",
-      "content": "sadasdsa",
+      "title": "Tesdt",
+      "content": "dasdasasd",
+      "isDone": false,
+      "createdDate": "2023-07-24T17:22:05.639Z",
+      "id": 2
+    },
+    {
+      "title": "asdasd",
+      "content": "asdas",
       "isDone": true,
-      "id": 9
+      "createdDate": "2023-07-24T17:22:07.914Z",
+      "id": 3
     }
   ]
 }
